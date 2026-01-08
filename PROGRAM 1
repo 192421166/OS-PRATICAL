@@ -8,13 +8,11 @@ int main() {
         printf("Fork failed\n");
     } 
     else if (pid == 0) {
-        // Child process
         printf("Child Process\n");
         printf("PID: %d\n", getpid());
         printf("Parent PID: %d\n", getppid());
     } 
     else {
-        // Parent process
         printf("Parent Process\n");
         printf("PID: %d\n", getpid());
         printf("Child PID: %d\n", pid);
